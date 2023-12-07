@@ -25,13 +25,7 @@ export const signout = async (req, res) => {
                 message: "user logout successfully",
                 user
             })
-        }else{
-               return res.status(401).send({
-                 success: false,
-                 message: "already user logout"
-             })
-        }
-        
+        } 
     } catch (error) {
         res.status(500).send({
             success: false,
